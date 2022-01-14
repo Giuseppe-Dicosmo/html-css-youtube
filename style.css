@@ -19,21 +19,67 @@ body{
 }
 
 header{
-  padding: 30px;
-  border: 2px solid red;
-  height: 20px;
+  padding: 10px 15px;
+}
+/* navigazione */
+nav i{
+  font-size: 20px;
+}
+
+nav  ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav li {
+  display: flex;
+  align-items: center;
+}
+
+nav .background-logo-youtube {
+  margin-left: 20px;
+  width: 100px;
+  height: 40px;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/e/e1/Logo_of_YouTube_%282015-2017%29.svg") no-repeat center;
+  background-size: contain;
+}
+
+nav .search input{
+  border: 1px solid #c5c5c5;
+  width: 650px;
+  height: 40px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+nav .search div{
+  display: flex;
+  align-items: center;
+  background-color: #f2f2f2;
+  border: 1px solid #c5c5c5;
+  height: 40px;
+  padding: 0 20px;
+}
+
+nav .near {
+  gap: 20px;
+}
+
+nav .profile-image {
+  display: block;
+  border-radius: 50%;
+  width: 40px;
 }
 
 main{
   display: flex;
-  border: 2px solid black;
   flex-grow: 1;
 }
 
 .side-bar{
   width: 240px;
   flex-shrink: 0;
-  overflow: scroll;
 }
 
 .widget{
@@ -42,18 +88,18 @@ main{
   border-bottom: 1px solid #e5e5e5;
 }
 
-.menu-item{
+main .menu-item{
   padding: 10px 10px;
   display: flex;
   align-items: center;
   position: relative;
 }
 
-.menu-item:hover, .menu-item.active{
+main .menu-item:hover, .menu-item.active{
   background-color: #e5e5e5;
 }
 
-.menu-item .icon{
+main .menu-item .icon{
   width: 30px;
   text-align: center;
   margin-right: 10px;
@@ -71,7 +117,7 @@ main{
   font-size: 14px;
 }
 
-.menu-item .profile-image{
+main .menu-item .profile-image{
   display: block;
   border-radius: 50%;
   width: 24px;
@@ -93,6 +139,8 @@ main{
 .categories{
   display: flex;
   background-color: white;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
   gap: 15px;
   padding: 15px 30px;
 }
@@ -109,7 +157,14 @@ main{
 
 .play-list-wrapper{
   padding: 20px 30px;
-  overflow: auto;
+}
+
+.play-list-wrapper > h1 {
+  padding-bottom: 40px;
+}
+
+.play-list-wrapper > h1 > span {
+  text-transform: uppercase;
 }
 
 .play-list{
@@ -118,7 +173,7 @@ main{
   flex-flow: row wrap;
   gap: 50px 10px;
   padding-bottom: 30px;
-  border-bottom: 1px solid black;
+  border-bottom: 3px solid #e5e5e5;
 }
 
 .play-list-item{
@@ -144,5 +199,16 @@ main{
 
 .card-body img{
   border-radius: 50%;
+}
+
+.card-body .info h3{
+  font-size: 19px;
+  margin-bottom: 5px;
+}
+
+.card-body .info p{
+  color: #555555;
+  font-size: 12px;
+  line-height: 17px;
 }
 
