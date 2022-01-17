@@ -18,8 +18,6 @@ body{
   flex-direction: column;
   height: 100vh;
 
-  border: 5px solid royalblue;
-
   font-family: 'Cabin', sans-serif;
   font-family: 'Candal', sans-serif;
   font-family: 'Heebo', sans-serif;
@@ -38,7 +36,7 @@ nav i{
 nav  ul {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  gap: 80px;
 }
 
 nav li {
@@ -55,7 +53,7 @@ nav .background-logo-youtube {
 }
 
 nav .search{
-  width: 40%;
+  width: 55%;
 }
 
 nav .search input{
@@ -74,6 +72,15 @@ nav .search div{
   height: 40px;
   padding: 0 20px;
 }
+
+nav .search .audio{
+  border-radius: 50%;
+  width: 0;
+  display: flex;
+  justify-content: center;
+  margin: 0 10px;
+}
+
 
 nav .near {
   gap: 20px;
@@ -99,6 +106,8 @@ main{
 .side-bar{
   width: 240px;
   flex-shrink: 0;
+  overflow: auto;
+  height: 750px;
 }
 
 .widget{

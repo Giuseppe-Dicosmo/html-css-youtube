@@ -1,4 +1,4 @@
-@media screen and (min-width: 800px) and (max-width: 1200px){
+@media screen and (min-width: 891px) and (max-width: 1140px){
 
   .side-bar{
     width: 80px;
@@ -39,7 +39,11 @@
   }
 }
 
-@media screen and (min-width: 510px) and (max-width: 800px){
+@media screen and (min-width: 510px) and (max-width: 890px){
+
+  nav  ul{
+    gap: 10px;
+  }
 
   .side-bar{
     width: 80px;
@@ -84,7 +88,10 @@
 
 
   nav .profile-image {
-    width: 70px;
+    width: 120px;
+  }
+  nav  ul{
+    gap: 0;
   }
 
   aside {
@@ -100,21 +107,32 @@
     flex-grow: 1;
     background: transparent;
     border: transparent;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav .search .audio{
+    margin: 0;
+  }
+
+  .play-list{
+    flex-direction: column;
+    justify-content: center;
   }
 
   .play-list-item{
-    width: calc((100% / 1) - 10px);
+    width: 400px;
   }
 
   .card-body img {
-    width: 60px;
+    width: 35px;
   }
 
   .card-body .info h3{
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .card-body .info p{
-    font-size: 15px;
+    font-size: 12px;
   }
 }
